@@ -24,11 +24,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0078-subsets](https://github.com/Suyashgopal/suyashdsa/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/Suyashgopal/suyashdsa/tree/master/0090-subsets-ii) |
 | [0216-combination-sum-iii](https://github.com/Suyashgopal/suyashdsa/tree/master/0216-combination-sum-iii) |
+| [3211-generate-binary-strings-without-adjacent-zeros](https://github.com/Suyashgopal/suyashdsa/tree/master/3211-generate-binary-strings-without-adjacent-zeros) |
 ## Bit Manipulation
 |  |
 | ------- |
 | [0078-subsets](https://github.com/Suyashgopal/suyashdsa/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/Suyashgopal/suyashdsa/tree/master/0090-subsets-ii) |
+| [3211-generate-binary-strings-without-adjacent-zeros](https://github.com/Suyashgopal/suyashdsa/tree/master/3211-generate-binary-strings-without-adjacent-zeros) |
 ## Hash Table
 |  |
 | ------- |
@@ -38,6 +40,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Suyashgopal/suyashdsa/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0022-generate-parentheses](https://github.com/Suyashgopal/suyashdsa/tree/master/0022-generate-parentheses) |
+| [3211-generate-binary-strings-without-adjacent-zeros](https://github.com/Suyashgopal/suyashdsa/tree/master/3211-generate-binary-strings-without-adjacent-zeros) |
 ## Dynamic Programming
 |  |
 | ------- |
