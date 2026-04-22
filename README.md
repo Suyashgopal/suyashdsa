@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0078-subsets](https://github.com/Suyashgopal/suyashdsa/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/Suyashgopal/suyashdsa/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/Suyashgopal/suyashdsa/tree/master/0090-subsets-ii) |
+| [0131-palindrome-partitioning](https://github.com/Suyashgopal/suyashdsa/tree/master/0131-palindrome-partitioning) |
 | [0216-combination-sum-iii](https://github.com/Suyashgopal/suyashdsa/tree/master/0216-combination-sum-iii) |
 | [3211-generate-binary-strings-without-adjacent-zeros](https://github.com/Suyashgopal/suyashdsa/tree/master/3211-generate-binary-strings-without-adjacent-zeros) |
 ## Bit Manipulation
@@ -45,11 +46,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Suyashgopal/suyashdsa/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0022-generate-parentheses](https://github.com/Suyashgopal/suyashdsa/tree/master/0022-generate-parentheses) |
 | [0079-word-search](https://github.com/Suyashgopal/suyashdsa/tree/master/0079-word-search) |
+| [0131-palindrome-partitioning](https://github.com/Suyashgopal/suyashdsa/tree/master/0131-palindrome-partitioning) |
 | [3211-generate-binary-strings-without-adjacent-zeros](https://github.com/Suyashgopal/suyashdsa/tree/master/3211-generate-binary-strings-without-adjacent-zeros) |
 ## Dynamic Programming
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/Suyashgopal/suyashdsa/tree/master/0022-generate-parentheses) |
+| [0131-palindrome-partitioning](https://github.com/Suyashgopal/suyashdsa/tree/master/0131-palindrome-partitioning) |
 ## Sorting
 |  |
 | ------- |
