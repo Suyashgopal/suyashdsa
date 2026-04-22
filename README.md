@@ -65,4 +65,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0079-word-search](https://github.com/Suyashgopal/suyashdsa/tree/master/0079-word-search) |
+## Linked List
+|  |
+| ------- |
+| [0203-remove-linked-list-elements](https://github.com/Suyashgopal/suyashdsa/tree/master/0203-remove-linked-list-elements) |
+## Recursion
+|  |
+| ------- |
+| [0203-remove-linked-list-elements](https://github.com/Suyashgopal/suyashdsa/tree/master/0203-remove-linked-list-elements) |
 <!---LeetCode Topics End-->
