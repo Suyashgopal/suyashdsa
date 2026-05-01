@@ -1,16 +1,26 @@
 class Solution {
     public int[] sortByBits(int[] arr) {
+        int n= arr.length;
+ int[] bits = new int [n];
 
+ for( int i=0;i<n;i++){
+    bits[i]=bit(arr[i]);
+ }
 
         for(int i=0;i<arr.length-1;i++){
             for(int j=i+1;j>0;j--){
-                if(bit(arr[j])<bit(arr[j-1])){
+                if(bits[j]<=bits[j-1]){
+                    if(bits[j]<=bits[j-1]){
+swap(j,j-1,arr);
+swap(j,j-1,bits);
+                    }
+                   
+                  if(bits[j]==bits[j-1]  && arr[j]<arr[j-1]){
                    swap(j,j-1,arr);
-
+                   swap(j,j-1,bits);
                 }
-                if(bit(arr[j])==bit(arr[j-1])  && arr[j]<arr[j-1]){
-                   swap(j,j-1,arr);
                 }
+                
             }
         }
         return arr;
@@ -28,8 +38,8 @@ int bit(int n){
 
 }
  void swap( int a, int b, int[] arr){
-  arr[a]= arr[b]^arr[a];
-    arr[b]=arr[b]^arr[a];
-    arr[a]= arr[b]^arr[a];
+   int temp= arr[a];
+   arr[a]=arr[b];
+   arr[b]=temp;
  }
 }
