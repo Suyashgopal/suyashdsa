@@ -1,24 +1,25 @@
 class Solution {
     public List<List<Integer>> subsets(int[] nums) {
-        List<List<Integer>> li= new ArrayList<>();
-        ArrayList<Integer> al= new ArrayList<>();
-        func(li,al,nums,0);
-        return li;
-        
-        
-    }
-    void func(List<List<Integer>> li, ArrayList<Integer> al,int[] nums,int idx){
-        if(idx== nums.length){
-            li.add(new ArrayList<>(al));
-            return;
+        //using bitmanipulation
+        int n= nums.length;
+        List<List<Integer>> outer=  new ArrayList<>(); 
+
+
+        int last= (1<<n)-1;
+        for( int i=0;i<=last;i++){
+                  ArrayList<Integer> li= new ArrayList<>();
+
+            for(int j=0;j<n;j++){
+                if((i& (1<<j))!=0){
+                    li.add(nums[j]);
+                }
+            }
+            outer.add(li);
+           
+
         }
-        al.add(nums[idx]);
-     func(li,al,nums,idx+1);
-     al.remove(al.size()-1);
-          func(li,al,nums,idx+1);
 
-
-    
-
+    return outer;
+        
     }
 }
