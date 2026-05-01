@@ -27,14 +27,12 @@ swap(j,j-1,bits);
         
     }
 int bit(int n){
-    int count=0;
+    int c=0;
     while (n>0){
-    if((n&1)==1){
-        count++;
-    }
-    n= n>>1;
-    }
-    return count;
+   
+    n=n&(n-1);
+    c++;    }
+    return c;
 
 }
  void swap( int a, int b, int[] arr){
