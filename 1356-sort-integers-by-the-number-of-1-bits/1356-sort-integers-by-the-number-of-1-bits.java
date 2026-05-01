@@ -1,0 +1,35 @@
+class Solution {
+    public int[] sortByBits(int[] arr) {
+
+
+        for(int i=0;i<arr.length;i++){
+            for(int j=1;j<arr.length;j++){
+                if(bit(arr[j])<bit(arr[j-1])){
+                   swap(j,j-1,arr);
+
+                }
+                if(bit(arr[j])==bit(arr[j-1])  && arr[j]<arr[j-1]){
+                   swap(j,j-1,arr);
+                }
+            }
+        }
+        return arr;
+        
+    }
+int bit(int n){
+    int count=0;
+    while (n>0){
+    if((n&1)==1){
+        count++;
+    }
+    n= n>>1;
+    }
+    return count;
+
+}
+ void swap( int a, int b, int[] arr){
+    int temp= arr[a];
+    arr[a]=arr[b];
+    arr[b]= temp;
+ }
+}
