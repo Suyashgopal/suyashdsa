@@ -1,6 +1,4 @@
-# suyashdsa
-A collection of LeetCode i praticed recently 
-
+leetcode solution java
 # LeetCode Topics
 ## Array
 |  |
