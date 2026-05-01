@@ -28,8 +28,8 @@ int bit(int n){
 
 }
  void swap( int a, int b, int[] arr){
-    int temp= arr[a];
-    arr[a]=arr[b];
-    arr[b]= temp;
+  arr[a]= arr[b]^arr[a];
+    arr[b]=arr[b]^arr[a];
+    arr[a]= arr[b]^arr[a];
  }
 }
