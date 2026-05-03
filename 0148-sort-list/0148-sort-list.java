@@ -10,67 +10,68 @@
  */
 class Solution {
     public ListNode sortList(ListNode head) {
-        if(head== null || head.next==null){
+
+
+        // base case 
+        if(head== null || head.next== null){
             return head;
         }
 
-       ListNode secondhalf= split(head);
-       ListNode left= sortList(head);
-       ListNode right = sortList(secondhalf);
-      return  merge(left,right);
-        
+        //reccursively get left sorted
+        ListNode secondhalf= split(head);
+        ListNode left= sortList(head);
+        ListNode right= sortList(secondhalf);
+           return merge(left,right);
+
+
+    
     }
+    ListNode merge(ListNode left,ListNode right){
+        ListNode dummy= new ListNode(-1);
+        ListNode temp= dummy;
 
-    public ListNode split(ListNode head ){
-        ListNode slow= head;
-        ListNode fast = head;
-    while(fast!= null && fast.next!= null)
-    {
-      
-        fast= fast.next.next;
-        if(fast!= null){
-            slow =slow.next;
-        }
-        
-    }
-    ListNode temp = slow.next;
-    slow.next= null;
-    return temp;
-
-  }
-
-    public ListNode merge( ListNode l1, ListNode l2){
-        ListNode dummy = new ListNode(-1);
-        ListNode temp = dummy;
-        while(l1!= null && l2!= null){
-            if(l1.val<l2.val){
-                temp.next=l1;
-                l1= l1.next;
-
-            }
+          ListNode lp= left;
+            ListNode rp= right;
+        while(lp!= null && rp!=null){
+            if(lp.val<=rp.val){
+                temp.next= lp;
+                lp= lp.next;
+                temp=temp.next;}
             else{
-                temp.next= l2;
-                l2= l2.next;
-
+                 temp.next= rp;
+                rp= rp.next;
+                temp=temp.next;
             }
-             temp= temp.next;
-            }
+        }
 
-            while(l1!= null){
-                temp.next= l1;
-                l1= l1.next;
-                temp = temp.next;
+        if(lp!= null){
+            temp.next= lp;
 
-            }
-            while(l2!= null){
-                temp.next=l2;
-                l2= l2.next;
-                temp= temp.next;
-          }
-        
+        }
+        if(rp!=null){
+            temp.next=rp;
+        }
         return dummy.next;
 
+    }
 
 
+
+
+    ListNode split(ListNode head){
+        ListNode slow= head;
+        ListNode fast= head;
+
+        while(fast!= null && fast.next!= null){
+            //we follow a different travesal than the nomal fast and slow here cause we want diffn result draw the result and then see 
+
+            fast= fast.next.next;
+            if(fast!= null){
+                slow= slow.next;
+            }
+  }
+  ListNode temp= slow.next;
+  slow.next= null;
+  return temp;
     }
 }
